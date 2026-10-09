@@ -9,7 +9,7 @@ class MarmitaController:
             'id': marmita.mostrar_id(),
             'nome': marmita.mostrar_nome(),
             'tamanho': marmita.mostrar_tamanho(),
-            'preco': marmita.mostrar_preco()
+            'preco_final': marmita.calcular_preco()
         }
 
     def listar_todas(self):
@@ -20,3 +20,7 @@ class MarmitaController:
             if m.mostrar_id() == id:
                 return self._para_dicionario(m)
         return None
+
+    # Regra da prova: pelo menos um filtro com compreensão de lista
+    def listar_por_tamanho(self, tamanho):
+        return [self._para_dicionario(m) for m in self._marmitas if m.mostrar_tamanho() == tamanho.upper()]
