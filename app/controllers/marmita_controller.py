@@ -21,6 +21,5 @@ class MarmitaController:
                 return self._para_dicionario(m)
         return None
 
-    # Regra da prova: pelo menos um filtro com compreensão de lista
     def listar_por_tamanho(self, tamanho):
         return [self._para_dicionario(m) for m in self._marmitas if m.mostrar_tamanho() == tamanho.upper()]
