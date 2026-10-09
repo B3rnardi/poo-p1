@@ -37,3 +37,17 @@ marmita_do_dia/
 | **Marcos** | Controllers e mock (dados simulados) |
 | **Leonardo** | Diagrama de classes e models |
 | **Fernando** | Routes e `main.py` |
+
+## Rotas da API
+
+| Método | Endpoint | Descrição | Status (Sucesso) |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/api/marmitas` | Lista todas as marmitas | `200 OK` |
+| `GET` | `/api/marmitas/tamanho/{tamanho}` | Lista marmitas por tamanho | `200 OK` |
+| `GET` | `/api/marmitas/{id}` | Busca marmita por ID | `200 OK` |
+| `GET` | `/api/clientes` | Lista todos os clientes | `200 OK` |
+| `GET` | `/api/clientes/{id}` | Busca cliente por ID | `200 OK` |
+| `GET` | `/api/pedidos` | Lista todos os pedidos | `200 OK` |
+| `GET` | `/api/pedidos/faturamento` | Relatório de faturamento total | `200 OK` |
+| `GET` | `/api/pedidos/{id}` | Busca pedido por ID | `200 OK` |
+| `POST` | `/api/pedidos` | Cadastra um novo pedido | `201 Created` |
