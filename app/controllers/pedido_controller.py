@@ -2,7 +2,7 @@ from app.models.pedido import carregar_pedidos, Pedido
 from app.models.marmita import carregar_marmitas
 
 class PedidoController:
-    def _init_(self):
+    def __init__(self):
         self._pedidos = carregar_pedidos()
         self._catalogo_marmitas = carregar_marmitas() # Necessário para calcular os totais
 
