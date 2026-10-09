@@ -1,7 +1,7 @@
 from app.models.cliente import carregar_clientes, Cliente
 
 class ClienteController:
-    def _init_(self):
+    def __init__(self):
         self._clientes = carregar_clientes()
 
     def _para_dicionario(self, cliente):
