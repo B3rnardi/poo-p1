@@ -27,4 +27,4 @@ marmita_do_dia/
 
 DIAGRAMA DE CLASSES
 
-![Diagrama de Classes do Projeto](imagens/diagrama.png)
+![Diagrama de Classes do Projeto](./imagens/diagrama.png)
