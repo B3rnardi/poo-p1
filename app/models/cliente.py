@@ -1,4 +1,3 @@
-# app/models/cliente.py
 from app.data.clientes_mock import CLIENTES
 
 class Cliente:

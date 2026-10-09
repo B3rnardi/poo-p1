@@ -8,7 +8,6 @@ router = APIRouter(prefix='/api/pedidos', tags=['Pedidos'])
 controller = PedidoController()
 cliente_controller = ClienteController()
 
-# Pydantic schemas apenas para ajudar o FastAPI a ler o JSON de entrada
 class ItemPedidoSchema(BaseModel):
     id_marmita: int
     quantidade: int
@@ -55,5 +54,5 @@ def criar_pedido(dados: CriarPedidoSchema):
         novo_pedido = controller.criar_pedido(dados.dict())
         return novo_pedido
     except ValueError as e:
-        # A Rota traduz o erro da Model para HTTP 422, garantindo pontos na prova
+        # A Rota traduz o erro da Model para HTTP 422
         raise HTTPException(status_code=422, detail=str(e))

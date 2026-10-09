@@ -1,4 +1,3 @@
-# app/models/pedido.py
 from app.data.pedidos_mock import PEDIDOS
 
 class Pedido:

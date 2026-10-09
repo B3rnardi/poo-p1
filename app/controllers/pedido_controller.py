@@ -4,7 +4,7 @@ from app.models.marmita import carregar_marmitas
 class PedidoController:
     def __init__(self):
         self._pedidos = carregar_pedidos()
-        self._catalogo_marmitas = carregar_marmitas() # Necessário para calcular os totais
+        self._catalogo_marmitas = carregar_marmitas() 
 
     def _para_dicionario(self, pedido):
         return {

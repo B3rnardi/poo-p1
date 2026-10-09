@@ -10,7 +10,6 @@ def listar_marmitas():
 
 @router.get('/tamanho/{tamanho}')
 def listar_marmitas_por_tamanho(tamanho: str):
-    # Rota extra para consumir a list comprehension do controller
     return controller.listar_por_tamanho(tamanho)
 
 @router.get('/{id}')
