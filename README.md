@@ -1,8 +1,9 @@
-# MARMITA DO DIA 
+# MARMITA DO DIA
 
 Sistema de gestão de pedidos e catálogo de marmitas desenvolvido em FastAPI, estruturado sob os princípios de Orientação a Objetos, polimorfismo, encapsulamento e validações robustas de regras de negócio.
 
 ---
+
 ## DIAGRAMA DE CLASSES
 
 ![Diagrama de Classes do Projeto](./imagens/diagrama.png)
@@ -27,5 +28,12 @@ marmita_do_dia/
 │
 ├── main.py                     # Ponto de entrada da aplicação FastAPI
 └── README.md                   # Documentação oficial do projeto
+```
 
+## Divisão de Responsabilidades
 
+| Integrante | Responsabilidade |
+|------------|------------------|
+| **Marcos** | Controllers e mock (dados simulados) |
+| **Leonardo** | Diagrama de classes e models |
+| **Fernando** | Routes e `main.py` |
