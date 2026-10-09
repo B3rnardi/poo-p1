@@ -22,7 +22,6 @@ class Cliente:
         self._nome = nome.strip()
 
     def alterar_telefone(self, telefone):
-        # 3ª Regra de Negócio com Raise da prova
         telefone_limpo = telefone.replace("-", "").replace(" ", "")
         if len(telefone_limpo) != 11 or not telefone_limpo.isdigit():
             raise ValueError("O telefone deve ter exatamente 11 dígitos numéricos")
